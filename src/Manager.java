@@ -17,4 +17,12 @@ public class Manager {
         }
         return null;
     }
+    Bottle searchYear(int year){
+        for(int i=0; i<bottleCount; i++){
+            if(myBottles[i].year == year){
+                return myBottles[i];
+            }
+        }
+        return null;
+    }
 }
